@@ -1,0 +1,41 @@
+.container{
+    position: absolute;
+    width: 90%;
+    height: 550px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.home{
+    text-align: center;
+}
+
+.logo{
+    font-size: 32px;
+    color: #4285F4;
+}
+
+.choice{
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+}
+
+.choice .item{
+    padding: 25px;
+    margin: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    border: 1px solid #4285F4;
+    color: #4285F4;
+    font-size: 20px;
+}
+
+.choice .item:hover{
+
+
+    border: 1px solid rgba(54, 238, 100, 0.945);
+    color: rgba(54, 238, 100, 0.945);
+
+}

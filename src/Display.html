@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="../style/display.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.css"
+      integrity="sha512-1hsteeq9xTM5CX6NsXiJu3Y/g+tj+IIwtZMtTisemEv3hx+S9ngaW4nryrNcPM4xGzINcKbwUJtojslX2KG+DQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <title>Display</title>
+  </head>
+
+  <body>
+    <div class="btn">
+      <span>
+        <a href="../index.html" class="return">
+          <i class="fa fa-home" aria-hidden="true"></i> Retour
+        </a></span
+      >
+      <span>
+        <a href="Create.html" class="return">
+          <i class="fa fa-plus" aria-hidden="true"></i> Create an incident
+        </a></span
+      >
+    </div>
+
+    <div class="container">
+      <h1>List of incidents</h1>
+      <hr />
+
+      <div class="table-container">
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Task</th>
+              <th>SLA definition</th>
+              <th>Type</th>
+              <th>Target</th>
+              <th>Stage</th>
+              <th>Business time left</th>
+              <th>Business elapsed time</th>
+              <th>Business elapsed percentage</th>
+              <th>Start time</th>
+              <th>Stop time</th>
+            </tr>
+          </thead>
+          <tbody id="list"></tbody>
+        </table>
+
+        <div class="pagination">
+          <button class="btn-pagination" id="last">
+            <i class="fa fa-less-than" aria-hidden="true"></i>
+          </button>
+          <button class="btn-pagination" id="next">
+            <i class="fa fa-greater-than" aria-hidden="true"></i>
+          </button>
+          <span class="page-info"
+            >Rows <span id="actual_page"></span>-<span id="nb_item"></span> of
+            <span id="nb_page"></span
+          ></span>
+        </div>
+      </div>
+    </div>
+
+    <script
+      type="text/javascript"
+      src="../node_modules/axios/dist/axios.js"
+    ></script>
+    <script type="text/javascript" src="../js/display.js"></script>
+  </body>
+</html>

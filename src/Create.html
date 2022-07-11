@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="../style/create.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.css"
+      integrity="sha512-1hsteeq9xTM5CX6NsXiJu3Y/g+tj+IIwtZMtTisemEv3hx+S9ngaW4nryrNcPM4xGzINcKbwUJtojslX2KG+DQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <title>Create</title>
+  </head>
+
+  <body>
+    <div class="btn">
+      <span>
+        <a href="../index.html" class="return">
+          <i class="fa fa-home" aria-hidden="true"></i> Retour
+        </a></span
+      >
+      <span>
+        <a href="Display.html" class="return">
+          <i class="fa fa-eye" aria-hidden="true"></i> Display incidents
+        </a></span
+      >
+    </div>
+
+    <div class="container">
+      <form action="" method="post" id="form" class="form">
+        <div class="left">
+          <div class="top">
+            <hr />
+            <div class="title">
+              <h3 class="title-h3">Create Incident</h3>
+              <p class="sub-title">
+                Create an Incident record to report and request assistance with
+                an issue you are having.
+              </p>
+            </div>
+            <hr />
+
+            <p class="info">
+              Request assistance with an issue you are having. An incident
+              record will be created and managed through to successful
+              resolution. You will also be notified of progress.
+            </p>
+          </div>
+          <hr />
+
+          <div class="bottom">
+            <div class="item">
+              <label for="impact" class="label"
+                ><span class="star">*</span> Impact
+                <i class="fa-solid fa-circle-question"></i
+              ></label>
+              <span class="msg_err" id="impact_err"></span>
+              <select class="input" id="impact" name="impact">
+                <option value="none">--None--</option>
+                <option value="Solved">1 - High</option>
+                <option value="NYS">2 - Medium</option>
+                <option value="NYS">3 - Low</option>
+              </select>
+            </div>
+
+            <div class="item">
+              <label for="short_description" class="label"
+                ><span class="star">*</span>Short description
+                <i class="fa-solid fa-circle-question"></i
+              ></label>
+              <span class="msg_err" id="short_err"></span>
+              <input type="text" class="input" id="short_description" />
+            </div>
+
+            <div class="item">
+              <label for="description" class="label"
+                ><span class="star">*</span>Description
+                <i class="fa-solid fa-circle-question"></i
+              ></label>
+              <span class="msg_err" id="desc_err"></span>
+              <input type="text" class="input" id="description" />
+            </div>
+
+            <div class="item">
+              <label for="configuration" a class="label"
+                >Configuration Item <i class="fas fa-help"></i
+              ></label>
+              <select class="input" id="configuration_item">
+                <option value=""></option>
+                <option value="SAP Sales and Distribution">
+                  SAP Sales and Distribution
+                </option>
+                <option value="SAP Materials  Management">
+                  SAP Materials Management
+                </option>
+                <option value="SAP Controlling">SAP Controlling</option>
+                <option value="EXCH-SD-05">EXCH-SD-05</option>
+              </select>
+            </div>
+
+            <div class="item">
+              <label for="service" class="label"
+                >Service <i class="fas fa-help"></i
+              ></label>
+              <select class="input" id="service">
+                <option value=""></option>
+                <option value="Email">Email</option>
+                <option value="Blackberry">Blackberry</option>
+                <option value="IT service">IT services</option>
+                <option value="Windows mobile">Windows mobile</option>
+                <option value="Electronic Messaging">
+                  Electronic Messaging
+                </option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <div class="right">
+          <div class="btn-box"><button type="submit">Submit</button></div>
+
+          <hr class="btn-hr" />
+
+          <span class="label-req">Required Information</span>
+
+          <ul class="req-list">
+            <li class="req-item">Impact</li>
+            <li class="req-item">Short description</li>
+            <li class="req-item">Description</li>
+          </ul>
+
+          <hr class="end-hr" />
+        </div>
+      </form>
+    </div>
+
+    <script
+      type="text/javascript"
+      src="../node_modules/axios/dist/axios.js"
+    ></script>
+    <script type="text/javascript" src="../js/create.js"></script>
+  </body>
+</html>

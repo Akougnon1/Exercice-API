@@ -1,0 +1,85 @@
+body{
+    cursor: default;
+    font-family: sans-serif;
+}
+.btn{
+    display: flex;
+    position: absolute;
+    top: 25px;
+    left: 25px;
+}
+
+.return{
+    margin-top: 20px;
+    margin-left: 15px;
+    padding: 5px 10px;
+    width: 80px;
+    border: 1px solid #551a8b;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+
+}
+
+.return:hover{
+    border: 1px solid tomato;
+    cursor: pointer;
+}
+
+.container{
+    position: absolute;
+    width: 90%;
+    height: 550px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+hr{
+    margin-bottom: 20px;
+}
+
+.table-container{
+    width: 100%;
+}
+
+.table{
+    width: 100%;
+    border-collapse:collapse;
+}
+
+tr:nth-child(even) {background: #CCC}
+tr:nth-child(odd) {background: #FFF}
+
+thead tr th{
+    color: #4285F4;
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    padding: 10px;
+    font-size: 19px;
+}
+
+tbody tr {
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    text-align: center;
+   
+}
+
+tbody tr td{
+    padding: 10px;
+}
+
+.pagination{
+  
+    padding: 0 0 5px 5px;
+    padding-top: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    border-top: none;
+}
+
+.btn-pagination{
+    padding: 10px 15px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+cursor: pointer;
+}

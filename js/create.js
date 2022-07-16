@@ -37,7 +37,7 @@ form.addEventListener("submit", (e) => {
         auth: credentials,
       })
       .then((res) => {
-        // console.log("successful", res.data);
+        console.log("successful", res.data);
         document.getElementById("inf").style.background = "rgb(89, 236, 89)";
         document.getElementById("inf").style.color = "white";
         document.getElementById("info").style.display = "block";

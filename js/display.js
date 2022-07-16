@@ -1,6 +1,7 @@
 /**DECLARATIONS */
 var url = "https://dev61942.service-now.com/api/now/table/incident";
 const credentials = { username: "dolo.akougon", password: "zARLobcv3w8Dyb" };
+
 var nb_item_by_page = 5;
 var first = 0;
 let current_page = 1;
@@ -25,7 +26,7 @@ get().then((res) => {
 // fonction d'affichage de la liste des données et la gestion de pagination
 const pagination = (res) => {
   let datas = res.result;
-  let datas_length = datas.length;
+  let datas_length = datas?.length;
   console.log(datas_length);
   let nb_page = Math.ceil(datas_length / nb_item_by_page);
 
